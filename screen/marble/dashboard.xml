@@ -54,18 +54,18 @@ along with this software (see the LICENSE.md file). If not, see
                     <container style="big-row no-wrap" type="span">
                         <container style="big-row-item q-my-auto q-ml-md q-mr-sm"><label text="Sales" type="h4"/></container>
                         <container style="big-row-item q-my-auto"><link url="../Order/FindOrder" parameter-map="[orderType:'Sales', statusId:'OrderPlaced,OrderProcessing', statusId_op:'in']"
-                                text="Placed" badge="${orderPlacedCount}" btn-type="default"/></container>
+                                text="Placed" badge="${orderPlacedCount}" btn-type="success" style="q-mr-sm"/></container>
                         <container style="big-row-item q-my-auto"><link url="../Order/FindOrder" parameter-map="[orderType:'Sales', statusId:'OrderApproved,OrderSent', statusId_op:'in']"
-                                text="Approved" badge="${orderApprovedCount}" btn-type="default"/></container>
+                                text="Approved" badge="${orderApprovedCount}" btn-type="success" style="q-mr-sm"/></container>
                         <container style="big-row-item q-my-auto"><link url="../Order/FindOrder" parameter-map="[orderType:'Sales', statusId:'OrderHold']"
-                                text="Held" badge="${orderHeldCount}" btn-type="default"/></container>
+                                text="Held" badge="${orderHeldCount}" btn-type="warning"/></container>
                     </container>
                     <container style="big-row no-wrap" type="span">
                         <container style="big-row-item q-my-auto q-ml-md q-mr-sm"><label text="Requests" type="h4"/></container>
                         <container style="big-row-item q-my-auto"><link url="../Request" parameter-map="[statusId:'ReqSubmitted', roleTypeId:'Customer']"
-                                text="Submitted" badge="${requestSubmittedCount}" btn-type="default"/></container>
+                                text="Submitted" badge="${requestSubmittedCount}" btn-type="success" style="q-mr-sm"/></container>
                         <container style="big-row-item q-my-auto"><link url="../Request" parameter-map="[statusId:'ReqReviewed,ReqInProgress', statusId_op:'in', roleTypeId:'Customer']"
-                                text="In Progress" badge="${requestInProgressCount}" btn-type="default"/></container>
+                                text="In Progress" badge="${requestInProgressCount}" btn-type="success"/></container>
                     </container>
                 </container>
             </widgets></section>
@@ -218,7 +218,7 @@ along with this software (see the LICENSE.md file). If not, see
             </container>
             <container style="diagram-sequence-item">
                 <container>
-                    <label text="Content: "/>
+                    <label text="Content:"/>
                     <link text="Wiki" url="../Wiki/WikiSpaces" link-type="anchor"/>
                     <label text=" - "/>
                     <link text="Blogs" url="../Wiki/WikiBlogs" link-type="anchor"/>
